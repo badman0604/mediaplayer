@@ -52,6 +52,35 @@ namespace mediaplayer
                 MedShow.LoadedBehavior = MediaState.Play;
             }
         }
+
+        private void btnPlay_Click(object sender, RoutedEventArgs e)
+        {
+            // 設定影音播放狀態為「Play」，將狀態設定到目前的讀取行為
+            MedShow.LoadedBehavior = MediaState.Play;
+        }
+
+        private void btnPause_Click(object sender, RoutedEventArgs e)
+        {
+            // 設定影音播放狀態為「Pause」，將狀態設定到目前的讀取行為
+            MedShow.LoadedBehavior = MediaState.Pause;
+        }
+
+        private void btnStop_Click(object sender, RoutedEventArgs e)
+        {
+            // 設定影音播放狀態為「Stop」，將狀態設定到目前的讀取行為
+            MedShow.LoadedBehavior = MediaState.Stop;
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0); // 關閉整個程式的指令
+        }
+
+        private void sliVolume_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            MedShow.Volume = sliVolume.Value; // 設定聲音大小
+                                              //txtFilePath.Text = MedShow.Volume.ToString();
+        }
     }
     }
 
