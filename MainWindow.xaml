@@ -28,7 +28,7 @@
         <Button x:Name="btnOpenFile" Content="開啟檔案" HorizontalAlignment="Left" Height="40" Margin="616,38,0,0" VerticalAlignment="Top" Width="116" RenderTransformOrigin="0.701,0.484" Background="#FFEE53B4" Click="btnOpenFile_Click"/>
         <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Height="40" Margin="122,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456"/>
         <Slider x:Name="sliVolume" HorizontalAlignment="Left" Height="24" Margin="679,392,0,0" VerticalAlignment="Top" Width="100" LargeChange="0.05" Maximum="1" TickFrequency="0.01" Value="0.5" ValueChanged="sliVolume_ValueChanged"/>
-        <Slider x:Name="sliProgress" HorizontalAlignment="Center" Height="20" Margin="0,342,0,0" VerticalAlignment="Top" Width="698">
+        <Slider x:Name="sliProgress" HorizontalAlignment="Center" Height="20" Margin="0,342,0,0" VerticalAlignment="Top" Width="698" PreviewMouseLeftButtonUp="sliProgress_PreviewMouseLeftButtonUp">
             <Slider.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -36,6 +36,6 @@
                 </LinearGradientBrush>
             </Slider.Background>
         </Slider>
-        <TextBox x:Name="txtTime" HorizontalAlignment="Left" Height="33" Margin="567,383,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextChanged="txtTime_TextChanged"/>
+        <TextBox x:Name="txtTime" HorizontalAlignment="Left" Height="33" Margin="567,383,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
     </Grid>
 </Window>
